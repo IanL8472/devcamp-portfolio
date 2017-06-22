@@ -43,7 +43,7 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.find(params[:id])
   end
   
-    def destroy
+  def destroy
       # Perform the lookup
     @portfolio_item = Portfolio.find(params[:id])
     
