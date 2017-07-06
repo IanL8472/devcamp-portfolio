@@ -56,4 +56,4 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'lee_view_tool', git: 'https://github.com/IanL8472/lee_view_tool'
+gem 'lee_view_tool', '~> 0.1.0'
