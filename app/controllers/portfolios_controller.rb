@@ -37,11 +37,9 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    
   end
 
   def update
-    
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
@@ -55,8 +53,6 @@ class PortfoliosController < ApplicationController
   end
   
   def destroy
-      # Perform the lookup
-    
       # Destroy/delete the record
     @portfolio_item.destroy
     
@@ -81,5 +77,4 @@ class PortfoliosController < ApplicationController
   def set_portfolio_item
     @portfolio_item = Portfolio.find(params[:id])
   end
-
 end
