@@ -2,13 +2,11 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <%= f.label :title %>
-        <%= f.text_field :title, class: 'form-control' %>
+        <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
       </div>
   
       <div class="form-group">
-        <%= f.label :subtitle %>
-        <%= f.text_field :subtitle, class: 'form-control' %>
+        <%= f.text_field :subtitle, class: 'form-control', placeholder: "Subtitle" %>
       </div>
       
       <div class="form-group">
@@ -26,8 +24,7 @@
     
     <div class="col-md-6">
       <div class="form-group">
-        <%= f.label :body %>
-        <%= f.text_area :body, class: 'form-control', rows: 13 %>
+        <%= f.text_area :body, class: 'form-control', rows: 13, placeholder: "Content" %>
       </div>
     </div>
   </div>
@@ -38,12 +35,13 @@
     <h2>Technologies Used:</h2>
     <div>
       <%= f.fields_for :technologies do |technology_form| %>
-        <div class="form-group">
-          <%= technology_form.label :name %>
-          <%= technology_form.text_field :name, class: 'form-control' %>
-        </div>
+        <%= render 'technology_fields', f: technology_form %>
       <% end %>
     </div>
+  
+  <div>
+    <%= link_to_add_association 'Add Technology', f, :technologies %>
+  </div>
   
     <div class="form-group">
       <%= f.submit "Save Portfolio Item", class: 'btn btn-success btn-block' %>
