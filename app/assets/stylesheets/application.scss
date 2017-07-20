@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -231,3 +231,13 @@ body {
    text-decoration: none;
    color: hotpink;
  }
+ 
+ .rdm-tweets {
+   color: black;
+   margin: 5px;
+ }
+ 
+ 
+.rdm-tweets > .card {
+  padding: 10px;
+}

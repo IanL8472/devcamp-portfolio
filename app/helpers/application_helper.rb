@@ -35,6 +35,10 @@ module ApplicationHelper
         title: 'Contact'
       },
       {
+        url: rdm_tweets_path,
+        title: 'Motivational Quotes'
+      },
+      {
         url: blogs_path,
         title: 'Blog'
       },
