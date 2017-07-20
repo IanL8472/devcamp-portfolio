@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'rdm-tweets', to: 'pages#rdm_tweets'
   
   resources :blogs do 
     member do
@@ -16,4 +17,8 @@ Rails.application.routes.draw do
   end
   
   root to: 'pages#home'
+  
+  
+  
+  
 end

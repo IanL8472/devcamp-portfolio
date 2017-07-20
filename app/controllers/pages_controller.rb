@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+  
+  def rdm_tweets
+    @tweets = SocialTool.twitter_search
+  end
 end
