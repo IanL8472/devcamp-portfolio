@@ -208,13 +208,9 @@ body {
    color: white;
  }
  
- .cch {
-   color: lightblue;
- }
- 
  .dec-link > a:link {
    text-decoration: none;
-   color: lightblue;
+   color: darkgreen;
  }
  
  .dec-link > a:hover {
@@ -244,6 +240,7 @@ body {
 
 .app-card-container {
   text-align: left;
+  color: black;
 }
 
 .app-card-container > .card {
