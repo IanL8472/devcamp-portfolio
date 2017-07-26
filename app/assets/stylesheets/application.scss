@@ -95,16 +95,16 @@ h6, .h6 {
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: .05rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: white;
   background-color: transparent;
-  border-bottom: .25rem solid transparent;
+  border-bottom: .05rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: white;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -178,7 +178,7 @@ h6, .h6 {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 65rem;
+    width: 100rem;
   }
 }
 
@@ -284,4 +284,8 @@ h6, .h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.navbar-collapse {
+  
 }
